@@ -32,14 +32,14 @@ The Wiener-Khinchin theorem states that the power spectral density of a wide sen
 ## PROGRAM
 ```
 clc
-clear all;
+clear all; 
 t=0:0.01:2*3.14;
-x=2*sin(2*t)-3*cos(3*t);
-subplot(3,2,1);
+x=sin(2*t); 
+subplot(3,2,1); 
 plot(x); 
 au=xcorr(x,x);
-subplot (3,2,2);
-plot(au); 
+subplot (3,2,2); 
+plot (au); 
 v=fft(au); 
 subplot(3,2,3);
 plot(abs(v)); 
@@ -54,7 +54,8 @@ plot(fw2);
 
 ## OUTPUT
 
-<img width="761" height="717" alt="image" src="https://github.com/user-attachments/assets/1065b8b7-4512-491e-85d2-be4330600d85" />
+<img width="610" height="460" alt="image" src="https://github.com/user-attachments/assets/2a83e4cb-ea7e-40cd-8a07-16627f94671c" />
+
 
 
 ## RESULT
